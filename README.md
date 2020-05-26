@@ -29,7 +29,7 @@ The **Metabox Flo L140c** is based on the **Clevo L140cu** chassis. This is the 
 - Web Cam is not great 720P only again it does the job
 - Page Up/Down buttons is very close to left and right arrow keys. I will probably remap them to left and right to avoid accidentally paging up/down
 
-#Setup
+# Setup
 ## Enter BIOS
 To enter the BIOS hit F2
 

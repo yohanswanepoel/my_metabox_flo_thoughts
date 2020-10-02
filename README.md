@@ -82,7 +82,7 @@ Make sure that the grub path in the last command is correct.
 
 Reboot and test
 
-# Face ID login - not working 
+# Face ID login - not working on Fedora
 You can install Howdy depends on how secure you think it is. I have not been able to get it to work in Fedora 32 yet.
 
 https://github.com/boltgolt/howdy

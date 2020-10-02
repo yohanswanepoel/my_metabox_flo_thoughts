@@ -69,9 +69,13 @@ GRUB_CMDLINE_LINUX="resume=/dev/mapper/frink-swap rd.lvm.lv=frink/root rd.lvm.lv
 ```
 
 Regenerate grub.cfg file (the following command is for UEFI installations):
-
+Fedora:
 ```bash
 grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+```
+Arch
+```bash
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 Make sure that the grub path in the last command is correct. 

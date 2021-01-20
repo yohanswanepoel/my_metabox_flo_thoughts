@@ -64,9 +64,11 @@ If it says ***entry (deep)*** then you are good. If not apply the next steps.
 
 **The Fix***
 Add mem_sleep_default=deep to GRUB_CMDLINE_LINUX in /etc/default/grub:
+* you may also want to fix bluetooth issues with mouse going to sleep *if you have it: btusb.enable_autosuspend=0
 ```bash
-GRUB_CMDLINE_LINUX="resume=/dev/mapper/frink-swap rd.lvm.lv=frink/root rd.lvm.lv=frink/swap crashkernel=128M mem_sleep_default=deep rhgb quiet"
+GRUB_CMDLINE_LINUX="resume=/dev/mapper/frink-swap rd.lvm.lv=frink/root rd.lvm.lv=frink/swap crashkernel=128M mem_sleep_default=deep rhgb quiet btusb.enable_autosuspend=0"
 ```
+
 
 Regenerate grub.cfg file (the following command is for UEFI installations):
 Fedora:

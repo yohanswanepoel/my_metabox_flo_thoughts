@@ -69,6 +69,11 @@ Add mem_sleep_default=deep to GRUB_CMDLINE_LINUX in /etc/default/grub:
 GRUB_CMDLINE_LINUX="resume=/dev/mapper/frink-swap rd.lvm.lv=frink/root rd.lvm.lv=frink/swap crashkernel=128M mem_sleep_default=deep rhgb quiet btusb.enable_autosuspend=0"
 ```
 
+* In PopOS
+```bash
+sudo kernelstub -a mem_sleep_default=deep
+```
+
 
 Regenerate grub.cfg file (the following command is for UEFI installations):
 Fedora:
